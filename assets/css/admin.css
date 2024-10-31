@@ -1,0 +1,115 @@
+/* Admin Styles */
+.quick-top-wrap {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quick-top-admin-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.quick-top-settings-form {
+    width: 60%;
+}
+
+.quick-top-live-preview {
+    width: 35%;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-table th {
+    width: 200px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.form-table td {
+    padding: 10px 0;
+}
+
+.form-table input[type="color"] {
+    width: 70px;
+    height: 30px;
+    border: none;
+}
+
+.form-table input[type="number"],
+.form-table select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+button.button-primary {
+    background: #0073aa;
+    border-color: #006799;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button.button-primary:hover {
+    background: #005177;
+}
